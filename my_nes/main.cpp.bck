@@ -1,0 +1,17 @@
+/*
+** EPITECH PROJECT, 2022
+** my_nes
+** File description:
+** main.cpp
+*/
+
+#include "bus.hpp"
+#include "olc6502.hpp"
+
+int main()
+{
+    Bus bus;
+    bus.write(0x0001, 0xFF);
+    printf("%d", bus.read(0x0001));
+    return 0;
+}
